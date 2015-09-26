@@ -23,3 +23,4 @@ int main()
 	getch();
 }
 //skuska uploadu na github cez git shell
+//skuska
