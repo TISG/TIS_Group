@@ -22,3 +22,4 @@ int main()
 	printf("Krokov celkovo: %i", vysledok-1);
 	getch();
 }
+//skuska uploadu na github cez git shell
