@@ -11,7 +11,7 @@ void hanoi(int cislo, char from, char tmp, char into) {
 
 int main()
 {   
-	int opravitNapocet;
+	int pocet;
 	printf("Zadaj aka vysoka je veza A: ");
 	scanf("%d", &pocet);
 	printf("\n");
