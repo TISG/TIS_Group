@@ -1,0 +1,14 @@
+
+   28.9.2015
+    Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+    1. určenie termínu tímových stretnutí
+    -našli sa viaceré možné časy, pričom po diskusii bol vybraný utorok po 11:30.
+    -stretnutie s cvičiacim bolo predbežne určené na pondelky o 11:00.
+    2. stretnutie zo zadávateľom -Martin Masár
+    -poslaná požiadavka o stretnutie, pričom na samotnom stretnutí sa bude podialať prinajmenšom člen skupiny priradený 
+    k tejto úlohe.
+    -Ide o zistenie požiadaviek, či už funkcionálnych alebo nefunkcionálnych, pre projekt. Z týchto požiadaviek sa následne 
+    vytvorí predbežný časový harmonogram.
+    -Podľa výsledkov tohto stretnutia sa bude určovať nasledovné napredovanie projektu a rozdeľovanie úloh. V prípade
+    nutnosti dôjde ku krátkemu meetingu cez internet ešte pred predpokladaným utorkovým stretnutím naplánovaným na 
+    6.10.2015
