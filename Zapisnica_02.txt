@@ -1,0 +1,15 @@
+5.10.2015
+    
+    Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+    
+    1. prvé stretnutie týmu s cvičiacim
+    - oboznámenie cvičiaceho s témou projektu a naším prvým stretnutím so zadávateľom projektu
+    - ukážka našeho githubového repozitára
+    - pozn. treba vytvoriť separátne foldre kvôli prehľadnosti
+    
+    2. ukážka Gantovho diagramu cvičiacemu
+    - cvičiaci je spokojný a diagram schválil
+    
+    3. všeobecná diskusia ohľadom rozdelenia jednodtlivých rolí medzi členmi týmu 
+      (neskôr sa bude preberať na osobnom stretnutí tímu konajúce sa 6.10.)
+      - ukončenie stertnutia s cvičiacim, ďalší dohodnutý termín 12.10.2015
