@@ -1,0 +1,76 @@
+funkcie systému:
+
+Systém musí byť schopný vytvoriť, načítať, uložiť a manipulovať s dátovou štruktúrou obsahujúcu slová,
+ku ktorým sú viazané zvuky a/alebo obrázky. Táto manipulácia je možná len pri splnení určitých podmienok
+(nemôže to robiť každý), napr. cez heslo. Bude to zoznam vybraných slov, ktoré budú ďalej použité v cvičeniach.
+S týmito údajmi budú robiť cvičenia, ktoré sú aktivity pre návštevníkov stránky poskytujúce možnosť 
+precvičiť používanie slov v dátovej štruktúre. Samotné cvičenia musiamať 2 módy- osobný na individuálne
+precvičovanie a skupinový pre vyučujúceho a publikum/žiakov. Taktiež je nutné, aby nebol iba jeden druh 
+cvičení ale viacero, ktoré sa navzájom od seba odlišujú.
+Keďže sa dáta v systéme spravujú cez samotný systém, musí byť schopný odfiltrovať zlé vstupy bez 
+pádu celého systému.
+
+Obmedzenia:
+
+Systém musí pracovať v rámci jedného DIV elementu na stránke https://www.mmcitanka.sk/ , kde bude zaradený
+ako javasciptový objekt. Taktiež musí byť riešený cez Node-js framework na zjednodušenie implementácie do už
+existujúceho systému.
+Ďalšia nutnosť je grafické používaťeľské rozhranie dostatočne jednoduché, aby s ním vedeli pracovať žiaci 
+prvého stupňa základnej školy, ktorý sú určený ako jedna z cieľových skupín používateľov.
+Systém taktiež musí byť spustiteľný na bežnom školskom počítači bez nadmerného spomalenia hardvéru.
+Funkcia zmeny údajov v dátovej štruktúre programu musí byť implementovaná tak, aby s ňou vedel pracovať
+priemerný učiteľ na základnej škole bez informatického vzdelania.
+Kód systému musí byť napísaný tak, aby sa s ním dalo manipulovať a robiť na ňom úpravy aj pre programátora,
+ltprý sa nepodielal na tvorbe systému (kód nesmie byť "čierna skrinka").
+
+ostatné systémy:
+Je nutné použiť framework Node-js, ktorý zabezpečuje backend programu. Taktiež keďže bude systém integrovaný ako 
+súčasť multimediálnej čítanky (https://www.mmcitanka.sk/), musí byť schopný pracovať v rámci danej stránky
+bez narušenia jej chodu.
+
+špecifické podmienky:
+F-functional=funkcionálne
+R-reliability=spoľahlivostné
+U-usability=použiteľnosti
+P-performance=výkonnostné
+S-supportability=podporovateľnosti
+
+REQ-F-01 - Jazyk
+	Projekt má byť napísaný v jazyku javascript a používať prostredie node-JS.
+
+REQ-U-02 - Zobrazenie
+	Kompletné GUI je navrhnuté tak, aby sa dalo použiť v jednom DIV elemente HTML 	stránky.
+
+REQ-F-03 - Kódovanie textu
+	Ako kódovanie je použité UTF-8.
+
+REQ-S-04 - Štýl kódovania
+	Pri tvorení kódu projektu je použitý princíp KISS (keep it simple, stupid).
+
+REQ-U-05 - Jednoduchosť použitia
+	Program je určený pre neinformatikov a školákov prevažne prvého stupňa základných škol,
+	kvôli čomu musí obsahovať intuitívne, prehľadné a ľahko používateľné GUI. 
+
+REQ-F-06 - Údaje
+	Má obsahovať databanku slov, ku ktorým môžu byť priradené obrázky.
+
+REQ-F-07 - Módy použitia
+	Program má nasledujúce módy použitia: 
+		1. Učiteľ, ktorý má možnosť meniť údaje v databanke
+		2. Skupinové cvičenie
+		3. Individuálne cvičenie
+
+REQ-F-08 - Možnosť úpravy
+	S údajmi v databanke sa dá manipulovať cez rozhranie v programe.
+
+REQ-F-09 - Rozličnosť cvičení
+	Projekt obsahuje niekoľko druhov cvičení na trénovanie vybraných slov.
+
+REQ-F-10 - Dedičnosť
+	Samotné cvičenia sú podtriedy nadradenej hlavnej triedy.
+
+REQ-F-11 - Zvuk
+	Audio komponent je riešený cez web audio API.
+
+REQ-S-12 - Testovanie
+	Release candidate verzia má byť hotová do začiatku decembra, optimálne otestovaná aj v 	školskom prostredí.
