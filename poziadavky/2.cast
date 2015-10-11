@@ -1,0 +1,61 @@
+2.1 Kontext systému
+
+Naša aplikácia predstavuje nový spôsob zoznámenia sa s vybranými slovami pre 
+žiakov prvého stupňa základných škôl. S aplikáciou budú pracovať dve skupiny 
+ľudí a to žiaci a učitelia.
+Z pohľadu žiaka, aplikácia vybrané slová bude obsahovať niekoľko rozličných 
+cvičení zameraných na výučbu vybraných slov. Medzi ne bude patriť priradenie 
+slova ku obrázku, doplnenie spravneho i/y do slova...(možnosť rozšíriť o 
+ďaľšie typy úloh.)
+Z pohľadu učiteľa táto aplikácia môže byť využívaná na spoločné vyučovanie na 
+jednom počítači, alebo na samostatné učenie sa na jednotlivých počítačoch.
+Aplikácia bude obsahovať databázu žiakov, kde bude možnosť hodnotiť ich pri 
+jednotlivých aktivitách.
+
+
+2.1.1 Používateľské rozhranie
+
+Používateľské rozhranie musí spľňať požiadavky stanovené zadávateľom projektu 
+nakoľko aplikácia bude integrovaná do už existujúceho webového rozhrania.
+Používateľské rozhranie musí byť vytvorené formou web aplikácie.
+Používateľské rozhranie musi byť dostatočne jednoduche a intuitívne pre 
+
+uživateľov.
+
+2.1.2 Hardvérové rozhranie
+Systém neobsahuje žiadne hardvérové rozhranie
+
+2.1.3 Softvérové rozhranie
+Aplikácia bude vytvorená ako web aplikácia pomocou javascriptu a node.js
+Používateľské rozhranie musí správne fungovať v prehliadačoch 
+IE,Firefox,Google Chrome a Opera.
+
+
+
+2.3 Charakteristika uživateľov
+
+Uživateľov tejto aplikácie budeme rozdeľovať do dvoch kategórií a to: žiakov 
+a učiteľov.
+
+-žiaci:
+ budú najmä prvého stupňa, čo znamená, že naša aplikácia musí byť 
+prispôsobená a jednoduchá na obsluhu dieťaťom vo veku 6-11 rokov. Predpokladá 
+sa, že k systému budú žiaci najmä pristupovať zo školského prosterdia no 
+nakoľko sa jedná o web aplikáciu budú k nej mať prístup aj z domu.
+-učiteĺia:
+ okrem všeobecnej funkčnosti aplikácie, učiteľia budú mať k dispozícií aj 
+systém hodnotenia jednotlivých žiakov pomocou bodov, ktoré sa budú ukľadať do 
+databázy k jednotlivým hodnoteným žiakom. Rozhranie pre učiteľov musí byť 
+takisto intuitívne a jednoduché na ovládanie aj bez technického vzdelania.
+
+
+
+2.5 Závislosti a predpokaldy
+jedinou závislosťou našej aplikácie je už existujúca elektronická čítanka do 
+ktorej sa naša aplikácia bude vkladať a je potrebné dodržať kompatibilitu 
+týchto dvoch aplikácií.
+
+
+
+
+
