@@ -1,0 +1,16 @@
+12.10.2015
+    
+    Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+    
+    1. druhé stretnutie týmu s cvičiacim
+    - ukážka našej špecifikácie projektu cvičiacemu
+    - upozornenie na veľa gramatických chýb v texte a chýbajúcich častí špecifikácie.
+    - návrhy na zmeny v niektorých častiach špecifikácie.
+    
+    2. tímové dorobenie špecifikácie podľa výhrad hneď po stretnutí 
+    - opravenie gramtických chýb
+    - doplnenie chýbajúcich častí špecifikácie
+    - vizuálne zmeny
+    - ukážka cvičiacemu , zvýšená spokojnosť
+    - posledné úpravy naplánované na tímovú prácu z domu a následne odovzdanie finálnej verzie v ten istý deň večer 
+    
