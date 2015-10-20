@@ -1,0 +1,12 @@
+20.10
+  Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+  
+  Tretie stretnutie s cvičiacim
+  1. Ukážka a ohodnotenie dokumentu "Konceptuálna analýza":
+  - dohodnutie sa na zmenách v dokumente (dopísať popis diagramov, doplniť fotky do dokumentu)
+  - celkovo bol dokument schválený, požiadavka o potvrdenie od zadávateľa
+  
+  2. Otázky ohľadom ďalšej časti projektu:
+  - formát dokumentu bol označený za vyhovujúci
+  - odkázanie na záverečnú správu ukážkového vypracovaného projektu ohľadom obsahu jednotlivých častí,
+  ak by neboli niektoré časti zrejmé zo zadania
