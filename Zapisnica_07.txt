@@ -1,0 +1,14 @@
+24.10.2015
+   
+    Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach
+ 
+ 
+            1. Update konceptuálnej analýzy - popis ku diagramom (Peter, Michal, Martin)
+ 
+            2. Update GUI po komunikácii so zadávateľom (Adrián, Martin)
+ 
+            3. Analýza technológií (Martin)
+ 
+            4. Kontextový diagram (Peter, Martin)
+       
+            5. Dátový model (Martin)
