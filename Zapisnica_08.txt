@@ -1,0 +1,11 @@
+26.10
+  Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+  
+  Štvrté stretnutie s cvičiacim
+  1. Ukážka a ohodnotenie dokumentu "Analýza technológii":
+  - dokument schválený bez väčších pripomienok
+  - dorobené diagrami z minulotýždňového zadania taktiež schválené
+  - čakanie na odobrenie GUI zadávateľom
+  
+  2. Informácie ohľadom ďalšieho zadania s názvom "Návrh":
+  - pripomienka: začať rozmýšlať ako bude vyzerať kód aplikácie
