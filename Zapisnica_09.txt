@@ -1,0 +1,10 @@
+2.11.
+  Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+  
+  1. Ujasnenie zadania pre tohtotýždňovú prácu
+  
+  2. Ukážka prototypu triedneho diagramu
+    -pripomienky k rozdelení na triedy vzhľadom na použité jazyky (menovite Javascript)
+    -diskusia o možných zmenách, rozsahu
+    
+  3. Rozdelenie častí projektu na 4 časti, jednoduchý popis častí.
