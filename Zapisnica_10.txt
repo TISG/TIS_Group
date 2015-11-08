@@ -1,0 +1,8 @@
+4.11.
+  Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+  
+  1. Rozprava o Návrhu, komponentoch
+  
+  2. Dopracovanie návrhu, špecifikácie komponentov 
+    
+  3. Spojenie predošlých dokumentov
