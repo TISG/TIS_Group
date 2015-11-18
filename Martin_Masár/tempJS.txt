@@ -1,0 +1,120 @@
+//textová verzia 0.1 JS 
+
+//predpokladá sa striktné mód JS
+//konštruktor pre slovo, obsahuje id slova, jeho text, link na audio a link na obrázok a ci je vybrane(true/false)
+function slovo(id, text, audio, obrazok, je_vybrane) {
+    this.id = id;
+    this.text = text;
+    this.audio = audio;
+    this.obrazok = obrazok;
+    this.vybrane=je_vybrane;
+}
+//konštruktor úlohy
+function uloha(id_cvicenia,id, slova, riesenie) {
+    this.id_cv=id_cvicenia;
+    this.id=id;
+    this.slova=slova;
+    this.riesenie=riesenie;
+    this.skontroluj=function(vysledok){
+       if (this.riesenie==vysledok){
+         return true;}
+       return false;
+    }
+}
+//vráti úlohu, resp. slová v nej a jej id
+function vypis_ulohu(uloha){
+    if (uloha.slova.length>0){
+      return [uloha.id, uloha.slova];
+    }
+    return null;
+
+}
+
+function skontroluj_ulohu(uloha, riesenie){
+    if (riesenie==uloha.riesenie){
+      return true;
+    }
+    return false;
+}
+
+function cvicenie(id, ulohy, nazov, popis, napoveda){
+  this.id=id;
+  this.ulohy=ulohy;
+  this.nazov=nazov;
+  this.popis=popis;
+  this.napoveda=napoveda;
+  this.vypis_cvicenie=function(pocet){
+  //ak je pocet vybraných vyžší ako počet úloh, potom to znamená že niektoré by sa opakovali
+   if (pocet>this.ulohy.length){
+   return null;}
+   var vybrane= [];
+   var ktore=0;
+   
+   //vytvorím si zoznam indexov úloh, ktoré použijem
+   while(vybrane.length<pocet){
+    ktore=Math.floor(Math.random() * this.ulohy.length); 
+    if (skontroluj(vybrane, ktore)){
+      vybrane.push(ktore);
+      }
+    }
+    var vysledne=[]
+    
+    //teraz máme zoznam indexov úloh, ktoré použijeme na výber zoznamu úloh
+    for (var i=0; i<ktore.length; i++){
+      vysledne.push(this.ulohy[ktore[i]]);
+    }
+    return [this.id, this.nazov, this.popis, vysledne]; 
+    
+  }
+
+}
+//skotroluj, či je premenná časť v poli
+function skontroluj(pole, cast){
+   if (jePole(pole)) {
+    for (var i=0; i<pole.length, i++){
+      if (pole==cast){
+      return false;}
+    }
+   }
+   return true;
+}
+
+
+//vráti boolean hodnotu, ci je objekt pole
+function jePole(objekt) {
+    return objekt.constructor.toString().indexOf("Array") > -1;
+}
+//vymení prvý výskyt y/ý, čo je písmeno, ktoré je namiesto i/í vo vybranom slove, za podtržník
+//text sa dá potom preparsovať a dá sa nájsť miesto, kde treba doplniť písmeno
+//volá sa pri vypisovaní textu na doplnenie
+function vytvor_dopln_pismeno(text){
+  return text.replace(/{y|ý|i|í}/i,"_");
+}
+
+
+//vytvorí úlohy na dopĺňanie slov
+//pre každé slovo vytvorí vlastnú úlohu
+function vytvor_ulohy_doplnanie(slova){
+   var ulohy=[]
+   for (var i=0;i<slova.length;i++){
+   //do množiny úloh pridá dopĺňanie písmena
+    ulohy.push(uloha(0,i,slova[i],slova[i].text));
+   }
+return ulohy;
+}
+var placeholder= {slovo(1000, "aby", "", "", true), slovo(1001,"mýliť sa", "", "", true), slovo(1002,"písmeno","","",false)};
+var doplnanie= cvicenie(0, vytvor_ulohy_doplnanie(placeholder),"Doplň písmeno", "Dopĺňanie správneho i/y do slov", "sem daj nápovedu");
+
+function nacitaj_slovo(id){
+//v module databázy
+
+return slovo;
+}
+
+function nacitaj_slova(pocet){
+var vys=[];
+for (var i=0;i<pocet;i++){
+ //treba dopniť podmienky generovania id
+  vys.push(nacitaj_slovo(id));
+  }
+}
