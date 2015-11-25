@@ -1,0 +1,8 @@
+24.11.
+  Michal Hradečný, Martin Masár, Adrián Pavčo, Peter Zach 
+  
+  1. Debata o práci na komponentoch
+  
+  2. Pokračovanie prác na komponentoch
+  
+  3. Integrácia kódu a snaha vytvoriť prezentovateľnú verziu
