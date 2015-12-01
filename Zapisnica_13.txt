@@ -1,0 +1,8 @@
+30.11.2015
+Michal Hradečný, Martin Masár
+
+    1. ukážka fungovania back-endu systému, resp. tvorba cvičenia a kontrola správnosti
+    
+    2. zhodnotenie funčných častí projektu
+    
+    3.krátka diskusia o problémoch pri integrácii
