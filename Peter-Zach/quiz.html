@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+  <body>
+    <div id="container">
+      <h1>Quiz o vybraných slovách</h1>
+      <p>Za neodpovedané otázky body nedostaneš!!</p>
+      <div id="content">
+        <img src="" id="otazka" height="200" width="250">
+        <div id="moznosti"></div>
+        <p><button id="submit"></button></p>
+        <p id="skore"></p>
+      </div>
+    </div>
+  <script>
+var quiz = [{
+  "otazka": ["obrazky/mydlo.jpg"],
+  "moznosti": ["Midlo", "Mydlo"],
+  "odpoved": "Mydlo"
+}, {
+  "otazka": ["obrazky/miska.jpg"],
+  "moznosti": ["Miska", "Myska"],
+  "odpoved": "Miska"
+}, {
+  "otazka": ["obrazky/syr.jpg"],
+  "moznosti": ["Syr", "Sir"],
+  "odpoved": "Syr"
+}, {
+  "otazka": ["obrazky/byk.jpg"],
+  "moznosti": ["Bík", "Býk"],
+  "odpoved": "Býk"
+}, {
+  "otazka": ["obrazky/vydra.jpg"],
+  "moznosti": ["Vydra", "Vidra"],
+  "odpoved": "Vydra"
+}];
+
+
+// elementy html priradujem do premennych
+var content = $("content"),
+  otazkaContainer = $("otazka"),
+  moznostiContainer = $("moznosti"),
+  skoreContainer = $("skore"),
+  submitBtn = $("submit");
+
+
+var aktualnaOtazka = 0,
+  skore = 0,
+  dalsiaOtazka = true;
+  
+
+//skratka pre document.getElementById(id)
+  function $(id) { 
+  return document.getElementById(id);
+}
+
+function otazky() {
+  var moznosti = quiz[aktualnaOtazka].moznosti,
+    moznostiHtml = "";
+
+  // prechadzam cez moznosti a vytvaram buttony pre odpovede
+  for (var i = 0; i < moznosti.length; i++) {
+    moznostiHtml += "<input type='radio' name='quiz" + aktualnaOtazka +
+      "' id='choice" + (i + 1) +
+      "' value='" + moznosti[i] + "'>" +
+      " <label for='choice" + (i + 1) + "'>" + moznosti[i] + "</label><br>";
+  }
+
+   // nacita otazky
+  //otazkaContainer.textContent = document.getElementById('otazka').src = quiz[aktualnaOtazka].otazka;
+  otazkaContainer = document.getElementById('otazka').src = quiz[aktualnaOtazka].otazka;
+
+  // nacita moznosti
+  moznostiContainer.innerHTML = moznostiHtml;
+
+  // nastavenie pri prvom spusteni
+  if (aktualnaOtazka === 0) {
+    skoreContainer.textContent = "skóre: 0 správnych odpovedí z " +
+      quiz.length + " možných.";
+    submitBtn.textContent = "Odošli Odpoveď";
+  }
+}
+
+function skontrolujOdpoved() {
+  // pytame sa otazku, alebo ideme na dalsiu
+  if (dalsiaOtazka) {
+    submitBtn.textContent = "Ďalšia otázka";
+    dalsiaOtazka = false;
+
+    // rozhoduje ktory button stlacili
+    var odpovedUzivatela,
+      odpovedIndex,
+      radios = document.getElementsByName("quiz" + aktualnaOtazka);
+    for (var i = 0; i < radios.length; i++) {
+      if (radios[i].checked) { // ak je tento button oznaceny
+        odpovedUzivatela = radios[i].value;
+      }
+
+      // ziskaj index spravnej odpovede
+      if (radios[i].value == quiz[aktualnaOtazka].odpoved) {
+        odpovedIndex = i;
+      }
+    }
+
+    // zistuje ci odpovedali spravne alebo nie
+    var labelStyle = document.getElementsByTagName("label")[odpovedIndex].style;
+    labelStyle.fontWeight = "bold";
+    if (odpovedUzivatela == quiz[aktualnaOtazka].odpoved) {
+      skore++;
+      labelStyle.color = "green";
+    } else {
+      labelStyle.color = "red";
+    }
+
+    skoreContainer.textContent = "skóre: " + skore + " správnych odpovedí z " +
+      quiz.length + " možných.";
+  } else { 
+     // presunieme sa na dalsiu otazku
+    dalsiaOtazka = true;
+    // zmeni text buttona na "Odosli odpoved"
+    submitBtn.textContent = "Odošli Odpoveď";
+    // pokial nie sme na poslednej otazke, zvyzsi cislo aktualnej otazky, inac zobrazi vysledok.
+    if (aktualnaOtazka < quiz.length - 1) {
+      aktualnaOtazka++;
+      otazky();
+    } else {
+      ukazVysledok();
+    }
+  }
+}
+
+// zobrazi vysledok a percentualne honodtenie.
+function ukazVysledok() {
+  content.innerHTML = "<h2>Úspešne si dokončil/a kvíz</h2>" +
+    "<h2>Tu sú tvoje výsledky:</h2>" +
+    "<h2>" + skore + " z " + quiz.length + " otázok, " +
+    Math.round(skore / quiz.length * 100) + "%<h2>";
+}
+
+
+
+window.addEventListener("load", otazky, false);
+submitBtn.addEventListener("click", skontrolujOdpoved, false);
+</script>
+</body>
+</html>
