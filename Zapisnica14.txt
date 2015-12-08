@@ -1,0 +1,10 @@
+7.12.2015
+Martin Masár, Peter Zach, Adrián Pavčo
+
+    1. Ukážka progressu vo vývoji
+    
+    2. Predstavenie funkčných častí projektu
+    
+    3. Rozprava o progresse, integrácii
+    
+    
