@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html xml:lang="sk">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Author" content="Marek Nagy" />
+    <meta name="GENERATOR" content="Linux i686" />
+    <link rel="SHORTCUT ICON" href="obrazky/voznik.gif" />
+    <link rel='stylesheet' type='text/css' href='base.css'/>
+    <link rel='stylesheet' type='text/css' href='RObject.css'/>
+	  <link rel='stylesheet' type='text/css' href='styles/pexeso.css'/>
+    <link rel='stylesheet' type='text/css' href='styles/style.css'/>
+    <title>Multimediálna čítanka - framework</title>
+  </head>
+  
+  <body>
+  <script type="text/javascript" src="mootools-core-1.4.2mn-full-nocompat-yc.js"> /**/ </script>
+  <script type="text/javascript" src="mootools-more-1.4.0.1-nocompat-yc.js"> /**/ </script>
+  <script type="text/javascript" src="base.js"></script>
+  <script type="text/javascript" src="RObject.js"></script>
+  <script type="text/javascript" src="Headblock.js"></script>
+  <script type="text/javascript" src="js/oknoVybraneCvicenia.js"></script>
+  <script type="text/javascript" src="js/oknoVybraneZoznam.js"></script>
+  <script type="text/javascript" src="js/oknoVybraneNapoveda.js"></script>
+  <script type="text/javascript" src="js/oknaCviceni/oknoVybraneCvicenie1.js"></script>
+  <script type="text/javascript" src="js/oknaCviceni/oknoVybraneCvicenie2.js"></script>
+  <script type="text/javascript" src="js/oknaCviceni/oknoVybraneCvicenie3.js"></script>
+  <script type="text/javascript" src="js/oknaCviceni/oknoVysledkyCviceni.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>           
+  <script type="text/javascript">
+  //kvoli konfliktu java prototype $ s jQuery $ pouzivame pre jQuery namiesto $ $jq
+  var $jq = jQuery.noConflict();    
+  //<![CDATA[
+    disableSelection (document.body);
+    document.ondragstart=function(e) {return false;} // Aby sa nedragovali obrazky vo Firefoxe
+
+    // Aby nevyskakovalo kontextove menu
+    document.addEventListener ("contextmenu", function (e) {
+      e.preventDefault();
+    }, false);
+
+    document.body.setStyles ({
+      'background-image': "url('obrazky/vlacik_pozadie.gif')", 'background-color': '#d2691e', 'overflow':'hidden',
+      'font-family': 'Arial, Sans-serif'
+    });
+
+
+    new Headblock ();
+    var menu = new RMenu ();
+
+    window.addEvent ('domready', function () {//{{{
+    });//}}}
+
+    window.addEvent ('load', function () {
+
+      menu.Open ();
+
+      new oknoVybraneCvicenia ();
+      
+      new oknoVybraneZoznam ();
+      
+      new oknoVybraneNapoveda();
+ 
+    })
+
+  //]]> 
+  </script>
+
+  </body>
+</html>
+
+

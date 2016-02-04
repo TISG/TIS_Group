@@ -1,0 +1,124 @@
+#help, #cv, #vybrane, #submit {
+	-moz-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	box-shadow:inset 0px 1px 0px 0px #fce2c1;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f09322), color-stop(1, #f0911d));
+	background:-moz-linear-gradient(top, #f09322 5%, #f0911d 100%);
+	background:-webkit-linear-gradient(top, #f09322 5%, #f0911d 100%);
+	background:-o-linear-gradient(top, #f09322 5%, #f0911d 100%);
+	background:-ms-linear-gradient(top, #f09322 5%, #f0911d 100%);
+	background:linear-gradient(to bottom, #f09322 5%, #f0911d 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f09322', endColorstr='#f0911d',GradientType=0);
+	background-color:#f09322;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #eeb44f;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #cc9f52;
+}
+
+#cv1, #cv2, #cv3, #vysledky, #zmazVysledky, #nevybr, #vybr, #pexeso_b, #pexeso_m, #pexeso_p, #pexeso_r, #pexeso_s, #pexeso_v, #pexeso_z,
+#poB, #poM, #poP, #poR, #poS, #poV, #poZ, #poL {
+	-moz-box-shadow:inset 0px 1px 0px 0px #3e7327;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #3e7327;
+	box-shadow:inset 0px 1px 0px 0px #3e7327;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #68b840), color-stop(1, #60ad39));
+	background:-moz-linear-gradient(top, #68b840 5%, #60ad39 100%);
+	background:-webkit-linear-gradient(top, #68b840 5%, #60ad39 100%);
+	background:-o-linear-gradient(top, #68b840 5%, #60ad39 100%);
+	background:-ms-linear-gradient(top, #68b840 5%, #60ad39 100%);
+	background:linear-gradient(to bottom, #68b840 5%, #60ad39 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#68b840', endColorstr='#60ad39',GradientType=0);
+	background-color:#68b840;
+	-moz-border-radius:10px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #4b8f29;
+	display:inline-block;
+	cursor:pointer;
+	color:#000000;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #5b8a3c;
+}
+
+#submit {
+	-moz-box-shadow: 0px 1px 0px 0px #fff6af;
+	-webkit-box-shadow: 0px 1px 0px 0px #fff6af;
+	box-shadow: 0px 1px 0px 0px #fff6af;
+	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #f2cd3a), color-stop(1, #f0d138));
+	background:-moz-linear-gradient(top, #f2cd3a 5%, #f0d138 100%);
+	background:-webkit-linear-gradient(top, #f2cd3a 5%, #f0d138 100%);
+	background:-o-linear-gradient(top, #f2cd3a 5%, #f0d138 100%);
+	background:-ms-linear-gradient(top, #f2cd3a 5%, #f0d138 100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#f2cd3a', endColorstr='#f0d138',GradientType=0);
+	background-color:#f2cd3a;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	border:1px solid #ffaa22;
+	display:inline-block;
+	cursor:pointer;
+	color:#333333;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #ffee66;
+	width: 5em;  
+	height: 2.7em;
+	background-position: center;
+}
+
+
+#poB, #poM, #poP, #poR, #poS, #poV, #poZ, #poL, #vybr, #nevybr {
+	margin:10px;
+}
+#cviceniaButtons, #pexesoButtons, #vybraneButtons, #container, #submit {
+    text-align: center;
+}
+#napoveda, #zoznam, #container {
+    font-size: 120%;
+}
+#otazka, #obrazky2 {
+	border-style: solid; 
+	border-width: 6px 6px 6px 6px; 
+	-moz-border-image: url('obrazky/border.png') 6 6 6 6 stretch; 
+	-webkit-border-image: url('obrazky/border.png') 6 6 6 6 stretch; 
+	-o-border-image: url('obrazky/border.png') 6 6 6 6 stretch; 
+	border-image: url('../obrazky/border.png') 6 6 6 6 stretch;
+	vertical-align: bottom;	
+}
+#obrazok2 {
+	display:block;
+}
+
+
+label > input{ /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+label > input + img{ /* IMAGE STYLES */
+  cursor:pointer;
+  border:4px solid transparent;
+}
+label > input:checked + img{ /* (RADIO CHECKED) IMAGE STYLES */
+  border:4px solid #33CC33;
+}
+#zoznamButtons {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 105%;
+}
